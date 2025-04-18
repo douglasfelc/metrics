@@ -1,0 +1,26 @@
+{
+    "name": "seu-projeto/metrics",
+    "description": "Exemplo de métricas com Prometheus e OpenTelemetry",
+    "require": {
+        "php": "^8.0",
+        "open-telemetry/exporter-otlp": "^1.2",
+        "open-telemetry/opentelemetry": "^1.0",
+        "open-telemetry/transport-grpc": "^1.1",
+        "php-http/guzzle7-adapter": "^1.1",
+        "promphp/prometheus_client_php": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "tbachert/spi": true
+        }
+    },
+    "minimum-stability": "stable"
+}

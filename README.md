@@ -1,4 +1,8 @@
-# Accesses
+# Metrics
+
+
+
+## Accesses
 
 ### Grafana
 http://localhost:3001/
@@ -25,13 +29,13 @@ http://localhost:3000/increment => capture metric
 ---
 
 
-### Install dependencies and build
+### Build and install dependencies
+
+`docker compose build`
 
 `docker compose run php composer install`
 
-`docker compose run npm install`
-
-`docker compose build`
+`docker compose run node npm install`
 
 
 ---
